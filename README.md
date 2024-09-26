@@ -6,7 +6,7 @@ IoTAutomake是一个自动化编译工具，旨在为IoT安全研究人员提供
 - gdbserver：8.0.1
 
 ## 主要功能：
-- 自动化构建交叉编译流程：在已有交叉编译工具链的前提下，通过预定义的Makefile实现源码下载、解压、补丁以及编译striped、statically linked的二进制程序
+- 自动化构建交叉编译流程：在已有交叉编译工具链的前提下，通过预定义的Makefile实现源码下载、解压、补丁以及编译stripped、statically linked的二进制程序
 - 灵活配置：可以根据需要自定义源码包版本、补丁、修改编译参数
 
 项目结构：
