@@ -1,0 +1,22 @@
+--- gdb/nat/linux-ptrace.c.bak  2024-09-25 14:41:24.405717800 +0800
++++ gdb/nat/linux-ptrace.c      2024-09-25 14:41:43.845727220 +0800
+@@ -21,8 +21,6 @@
+ #include "linux-procfs.h"
+ #include "linux-waitpid.h"
+ #include "buffer.h"
+-#include "gdb_wait.h"
+-#include "gdb_ptrace.h"
+ #ifdef HAVE_SYS_PROCFS_H
+ #include <sys/procfs.h>
+ #endif
+
+ +++ gdb/nat/linux-ptrace.h      2024-09-25 14:50:17.453154466 +0800
+@@ -21,7 +21,7 @@
+ struct buffer;
+ 
+ #include "nat/gdb_ptrace.h"
+-
++#include "gdb_wait.h"
+ #ifdef __UCLIBC__
+ #if !(defined(__UCLIBC_HAS_MMU__) || defined(__ARCH_HAS_MMU__))
+ /* PTRACE_TEXT_ADDR and friends.  */

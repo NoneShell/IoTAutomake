@@ -1,0 +1,11 @@
+--- .config.old	2024-09-26 09:45:58.380167638 +0800
++++ .config	2024-09-26 09:46:57.121625265 +0800
+@@ -40,7 +40,7 @@
+ #
+ # Build Options
+ #
+-# CONFIG_STATIC is not set
++CONFIG_STATIC=y
+ # CONFIG_PIE is not set
+ # CONFIG_NOMMU is not set
+ # CONFIG_BUILD_LIBBUSYBOX is not set
